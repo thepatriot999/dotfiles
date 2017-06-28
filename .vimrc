@@ -1,4 +1,3 @@
-
 execute pathogen#infect()
 
 set clipboard+=unnamed
@@ -28,7 +27,7 @@ set autoindent
 set ic
 
 " Font and size
-set guifont=Monaco:h14
+set guifont=Monaco:h19
 
 " Enable line numbers
 set number
@@ -69,7 +68,7 @@ set showmode
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=0
 
-"Load powerline theme
+" Load powerline theme
 source //Users/jeshuaensong/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
 
@@ -92,3 +91,8 @@ set relativenumber
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Tab
+set hidden
+nnoremap <C-M> :bnext<CR>
+nnoremap <C-N> :bprev<CR>
