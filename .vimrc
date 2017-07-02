@@ -94,5 +94,12 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Tab
 set hidden
-nnoremap <C-M> :bnext<CR>
-nnoremap <C-N> :bprev<CR>
+nnoremap <C-L> :bnext<CR>
+nnoremap <C-K> :bprev<CR>
+
+" vim-multiple-cursor
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
